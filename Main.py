@@ -8,6 +8,8 @@ from Cliente import Cliente
 from Conta import Conta
 
 c1=Cliente("José","9441-8922")
-cont=Conta(c1.nome,1893,100)
+conta=Conta(c1.get_nome(),1892)
 
-print("Nome:",cont.titular,"\nNumero:",cont.numero,"\nSeu Saldo:",cont.saldo)
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
